@@ -2,7 +2,7 @@
 
 ![](https://github.com/halfrost/halfrost/blob/master/icons/header_.png)
 
-I make elegantly professional **💻 Distributed Systems, 📱 iOS apps and 🌐 Website** for a living and also **Write some blogs**. 🌈    
+I make elegantly professional **💻 Distributed Systems, 📱 Android apps and 🌐 Website** for a living and also **Write some blogs**. 🌈    
 
 * 🧐   Interested in full stack. Recent focus on backend.
 * 💼   Back End Engineer at Sterlite.
@@ -44,7 +44,7 @@ I make elegantly professional **💻 Distributed Systems, 📱 iOS apps and 🌐
 <a href= "https://github.com/manisense"><img src="https://img.icons8.com/material-outlined/27/000000/ball-point-pen.png"/></a>
 <a href= "https://www.linkedin.com/in/muneshmeena/"><img src="https://img.icons8.com/material-outlined/30/000000/linkedin.png"/></a>
 <a href= "https://twitter.com/manishdeux"><img src="https://img.icons8.com/material-outlined/30/000000/twitter.png"/></a>
-<a href= "https://manisemeena.me"><img src="https://img.icons8.com/material-outlined/27/000000/geography.png"/></a>
+<a href= "https://manishmeena.me"><img src="https://img.icons8.com/material-outlined/27/000000/geography.png"/></a>
 </p>
 
 <p  align="center">
