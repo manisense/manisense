@@ -21,9 +21,10 @@
   <a href="#-tech-stack">Tech Stack</a> •
   <a href="#-github-stats">GitHub Stats</a> •
   <a href="#-projects">Projects</a> •
-  <a href="#-spotify">Spotify</a> •
   <a href="#-connect-with-me">Connect</a>
 </p>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## 🧑‍💻 About Me
 
@@ -34,7 +35,8 @@ const maniSense = {
   passions: ["AI & Machine Learning", "Open Source", "Tech Writing"],
   currentlyLearning: ["Web3", "Cloud Architecture", "Advanced ML/AI"],
   askMeAbout: ["web dev", "tech", "app dev", "AI solutions"],
-  funFact: "I can solve a Rubik's cube in under 2 minutes!"
+  funFact: "I can solve a Rubik's cube in under 2 minutes!",
+  dailyCoffeeCount: Infinity
 };
 ```
 
@@ -50,7 +52,13 @@ const maniSense = {
 
 <br clear="right"/>
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ## 🚀 Tech Stack
+
+<div align="center">
+  <h3>The tools I speak fluently</h3>
+</div>
 
 <details open>
 <summary><b>Frontend</b></summary>
@@ -82,6 +90,8 @@ const maniSense = {
 </p>
 </details>
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ## 📊 GitHub Stats
 
 <div align="center">
@@ -94,6 +104,8 @@ const maniSense = {
   <img src="https://github-profile-trophy.vercel.app/?username=manisense&theme=onestar&no-frame=true&column=3&row=2" width="465px" />
 </div>
 
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
 ## 🛠️ Featured Projects
 
 <div align="center">
@@ -105,19 +117,33 @@ const maniSense = {
   </a>
 </div>
 
-## 🎵 Now Playing on Spotify
-
-<div align="center">
-  <a href="https://open.spotify.com/user/31hzv3fqse46at25db5fzzu6k64q">
-    <img src="https://spotify-recently-played-readme.vercel.app/api?user=31hzv3fqse46at25db5fzzu6k64q&count=3&unique=true" alt="Spotify Recently Played" width="800" />
-  </a>
-</div>
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## 🐍 Contribution Graph
 
+<p align="center">
+  <img src="https://github.com/manisense/manisense/blob/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+</p>
+
+> *Eating commits, not just making them!*
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
+
+## 💻 Weekly Development Breakdown
+
 <div align="center">
-  <img src="https://raw.githubusercontent.com/manisense/manisense/output/github-contribution-grid-snake-dark.svg" />
+  
+```text
+JavaScript   ██████████████████░░░░░   72.4% 
+TypeScript   ████████░░░░░░░░░░░░░░░   32.9% 
+HTML         ████░░░░░░░░░░░░░░░░░░░   16.4% 
+CSS          ███░░░░░░░░░░░░░░░░░░░░   12.8% 
+Python       ██░░░░░░░░░░░░░░░░░░░░░    8.3%
+```
+  
 </div>
+
+<img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
 ## 📬 Connect with Me
 
@@ -151,6 +177,22 @@ const maniSense = {
 </div>
 
 <div align="center">
+  <h3>📌 Achievements</h3>
+  
+  <img src="https://github-readme-twitter-gazf.vercel.app/api?id=manisense&layout=wide&show_reply=off&show_retweet=off" width="550" alt="github-readme-twitter">
+</div>
+
+<div align="center">
+  <p>⭐️ From <a href="https://github.com/manisense">ManiSense</a> with 💻 and ☕</p>
+  
+```
+while(alive) {
+    eat();
+    sleep();
+    code();
+    repeat();
+}
+```
   
   ![Bottom Wave](https://raw.githubusercontent.com/Trilokia/Trilokia/379277808c61ef204768a61bbc5d25bc7798ccf1/bottom_header.svg)
   
