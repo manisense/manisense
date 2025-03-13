@@ -119,13 +119,14 @@ const maniSense = {
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
-## 🐍 Contribution Graph 
+## 🐍 Contribution Graph
 
 <p align="center">
-  <img src="https://github.com/manisense/manisense/blob/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+  <img src="https://github.com/manisense/manisense/raw/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
 </p>
 
 > *Eating commits, not just making them!*
+
 
 <img src="https://user-images.githubusercontent.com/73097560/115834477-dbab4500-a447-11eb-908a-139a6edaec5c.gif">
 
