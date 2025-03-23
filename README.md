@@ -4,7 +4,7 @@
 
 <p align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=FDB74E&center=true&vCenter=true&width=600&lines=Hi+there%2C+I'm+ManiSense+%F0%9F%91%8B;Full-Stack+Developer+%F0%9F%92%BB;AI+Enthusiast+%26+Tech+Blogger+%F0%9F%A4%96;Welcome+to+my+Digital+World+%F0%9F%8C%8D" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=FDB74E&center=true&vCenter=true&width=600&lines=Hi+there%2C+I'm+Manish+%F0%9F%91%8B;Software+Developer+%F0%9F%92%BB;AI+Enthusiast+%26+Coder+&+Programmer+%F0%9F%A4%96;Welcome+to+my+Digital+World+%F0%9F%8C%8D" alt="Typing SVG" />
   </a>
 </p>
 
@@ -31,11 +31,11 @@
 ```javascript
 const maniSense = {
   location: "Earth, Milky Way",
-  occupation: "Full-Stack Developer",
-  passions: ["AI & Machine Learning", "Open Source", "Tech Writing"],
-  currentlyLearning: ["Web3", "Cloud Architecture", "Advanced ML/AI"],
-  askMeAbout: ["web dev", "tech", "app dev", "AI solutions"],
-  funFact: "I can solve a Rubik's cube in under 2 minutes!",
+  occupation: "Software Developer",
+  passions: ["Development", "AI", "Open Source", "Programming"],
+  currentlyLearning: ["Parallel Computing", "System Architecture", "App Development"],
+  askMeAbout: ["web dev", "tech", "app dev", "AI solutions", "System Design"],
+  funFact: "I can solve a Rubik's cube in under a minute!",
   dailyCoffeeCount: Infinity
 };
 ```
@@ -138,7 +138,8 @@ const maniSense = {
 JavaScript   ██████████████████░░░░░   72.4% 
 TypeScript   ████████░░░░░░░░░░░░░░░   32.9% 
 HTML         ████░░░░░░░░░░░░░░░░░░░   16.4% 
-CSS          ███░░░░░░░░░░░░░░░░░░░░   12.8% 
+CSS          ███░░░░░░░░░░░░░░░░░░░░   12.8%
+C++          ██░░░░░░░░░░░░░░░░░░░░░   10.2% 
 Python       ██░░░░░░░░░░░░░░░░░░░░░    8.3%
 ```
   
