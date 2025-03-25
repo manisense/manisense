@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/manisense/manisense/blob/main/header.png" alt="ManiSense" />
+  <img src="https://github.com/manisense/manisense/blob/main/header.png" alt="Manisense" />
 </h1>
 
 <p align="center">
