@@ -1,0 +1,153 @@
+name: Update Weekly Development Breakdown
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'  # Run weekly on Sunday at midnight
+  workflow_dispatch:     # Allow manual trigger
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          
+      - name: Create stats update script
+        run: |
+          cat > update-stats.js << 'EOF'
+          const fs = require('fs');
+          const https = require('https');
+          
+          const username = 'manisense';  // Your GitHub username
+          
+          // Function to make a GET request to the GitHub API
+          function githubApiRequest(url) {
+            return new Promise((resolve, reject) => {
+              const options = {
+                headers: {
+                  'User-Agent': 'GitHub-Stats-Updater',
+                  'Authorization': `token ${process.env.GITHUB_TOKEN}`
+                }
+              };
+              
+              https.get(url, options, (res) => {
+                let data = '';
+                res.on('data', chunk => data += chunk);
+                res.on('end', () => {
+                  if (res.statusCode === 200) {
+                    resolve(JSON.parse(data));
+                  } else {
+                    reject(new Error(`GitHub API request failed with status code ${res.statusCode}: ${data}`));
+                  }
+                });
+              }).on('error', reject);
+            });
+          }
+          
+          async function fetchLanguageStats() {
+            try {
+              // Get all repositories
+              const repos = await githubApiRequest(`https://api.github.com/users/${username}/repos?per_page=100`);
+              
+              // Initialize language bytes counter
+              const languageBytes = {};
+              
+              // Process each repository
+              for (const repo of repos) {
+                if (repo.fork) continue; // Skip forked repositories
+                
+                const languages = await githubApiRequest(repo.languages_url);
+                
+                // Add language bytes to our stats
+                for (const [language, bytes] of Object.entries(languages)) {
+                  languageBytes[language] = (languageBytes[language] || 0) + bytes;
+                }
+              }
+              
+              // Calculate total bytes
+              const totalBytes = Object.values(languageBytes).reduce((sum, bytes) => sum + bytes, 0);
+              
+              // Calculate percentages and create sorted array
+              const languageStats = Object.entries(languageBytes)
+                .map(([language, bytes]) => ({
+                  language,
+                  percentage: (bytes / totalBytes * 100),
+                  bytes
+                }))
+                .sort((a, b) => b.percentage - a.percentage)
+                .slice(0, 6); // Take top 6 languages
+              
+              // Format the output
+              return formatLanguageStats(languageStats);
+            } catch (error) {
+              console.error('Error fetching language stats:', error);
+              process.exit(1);
+            }
+          }
+          
+          function formatLanguageStats(stats) {
+            // Calculate the scaled percentages so they sum to 100%
+            const totalPercentage = stats.reduce((sum, stat) => sum + stat.percentage, 0);
+            stats.forEach(stat => stat.scaledPercentage = (stat.percentage / totalPercentage * 100));
+            
+            let output = '```text\n';
+            
+            stats.forEach(stat => {
+              const bars = Math.round(stat.scaledPercentage / 5); // 5% per bar
+              const barStr = '█'.repeat(bars) + '░'.repeat(20 - bars);
+              output += `${stat.language.padEnd(12)} ${barStr} ${stat.scaledPercentage.toFixed(1)}% \n`;
+            });
+            
+            output += '```';
+            return output;
+          }
+          
+          async function updateReadme() {
+            try {
+              // Read the current README
+              const readmePath = 'README.md';
+              const readme = fs.readFileSync(readmePath, 'utf8');
+              
+              // Generate the new stats block
+              const newStats = await fetchLanguageStats();
+              
+              // Define the pattern to find the stats section in the README
+              const statsPattern = /(## 💻 Weekly Development Breakdown\n\n<div align="center">\n\s*```text\n)[\s\S]*?(```\n\s*\n<\/div>)/;
+              
+              // Replace the old stats with the new stats
+              const updatedReadme = readme.replace(
+                statsPattern,
+                `$1${newStats.split('```text\n')[1].split('```')[0]}$2`
+              );
+              
+              // Write the updated README
+              fs.writeFileSync(readmePath, updatedReadme);
+              
+              console.log('README updated successfully!');
+            } catch (error) {
+              console.error('Error updating README:', error);
+              process.exit(1);
+            }
+          }
+          
+          updateReadme();
+          EOF
+      
+      - name: Update README with accurate stats
+        run: node update-stats.js
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Commit and push changes
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add README.md
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Update weekly development breakdown stats" && git push)
