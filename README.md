@@ -153,7 +153,7 @@ CSS          ░░░░░░░░░░░░░░░░░░░░ 0.6%
   <a href="https://x.com/manishdeux" target="_blank">
     <img src="https://img.shields.io/badge/Twitter-%231DA1F2.svg?style=for-the-badge&logo=Twitter&logoColor=white" alt="Twitter" />
   </a>
-  <a href="https://www.linkedin.com/in/muneshmeena/" target="_blank">
+  <a href="https://www.linkedin.com/in/ma/" target="_blank">
     <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:manishdeux@gmail.com">
