@@ -135,7 +135,7 @@ const maniSense = {
 <div align="center">
   
 ```text
-TypeScript   ██████████████░░░░░░ 69.1% 
+TypeScript   ██████████████░░░░░░ 69.0% 
 PLpgSQL      ███░░░░░░░░░░░░░░░░░ 13.1% 
 C            █░░░░░░░░░░░░░░░░░░░ 6.5% 
 JavaScript   █░░░░░░░░░░░░░░░░░░░ 5.0% 
