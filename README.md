@@ -109,11 +109,11 @@ const maniSense = {
 ## 🛠️ Featured Projects
 
 <div align="center">
-  <a href="https://github.com/manisense/project1">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=manisense&repo=project1&bg_color=0D1117&border_color=30363D&title_color=FDB74E&text_color=8B949E&icon_color=FDB74E" />
+  <a href="https://github.com/manisense/medikle-web">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=manisense&repo=medikle-web&bg_color=0D1117&border_color=30363D&title_color=FDB74E&text_color=8B949E&icon_color=FDB74E" />
   </a>
-  <a href="https://github.com/manisense/project2">
-    <img src="https://github-readme-stats.vercel.app/api/pin/?username=manisense&repo=project2&bg_color=0D1117&border_color=30363D&title_color=FDB74E&text_color=8B949E&icon_color=FDB74E" />
+  <a href="https://github.com/manisense/dhundho">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=manisense&repo=dhundho&bg_color=0D1117&border_color=30363D&title_color=FDB74E&text_color=8B949E&icon_color=FDB74E" />
   </a>
 </div>
 
